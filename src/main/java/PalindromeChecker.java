@@ -22,12 +22,12 @@ public void tester()
         System.out.println("An error occurred.");
         e.printStackTrace();
     }
+}
 public boolean palindrome(String word) {
     String baseWord = onlyLetters(noCapitals(noSpaces(word))); 
     String reversedWord = reverse(baseWord);
     return baseWord.equals(reversedWord);
 }
-
 public String reverse(String str) {
     String sNew = new String();
     for (int i = str.length(); i > 0; i--) {
